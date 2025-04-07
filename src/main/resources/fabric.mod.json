@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "shadow-slave",
+	"version": "${version}",
+	"name": "Shadow Slave",
+	"description": "Este mod fue hecho por amantes de shadow slave para amantes de shadow slave",
+	"authors": [
+		"Mestizo"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/shadow-slave/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.lostoflight.shadowslave.ShadowSlave"
+		],
+		"fabric-datagen": [
+			"com.lostoflight.shadowslave.ShadowSlaveDataGenerator"
+		],
+		"client": [
+			"com.lostoflight.shadowslave.ShadowSlaveClient"
+		]
+	},
+	"mixins": [
+		"shadow-slave.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.12",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
